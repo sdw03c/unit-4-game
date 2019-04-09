@@ -21,9 +21,9 @@
 
 <body id = "background-image">
     <div id="main-container" class="container">
-        <h1>Crystals Collector!</h1>
+        <h1 id="header">Crystals Collector!</h1>
     <div class ="row">
-        <div class = "col-sm-7">
+        <div class = "col-sm-6" id="instructions">
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you 
                 will add a specific amount of points to your total score.</p>
@@ -33,23 +33,24 @@
             <p>The value of each crystal is hidden from you until you 
                 click on it.</p>
             <p>Each time when the game starts, the game will change the 
-                value of each crystal</p>    
+                value of each crystal.</p>    
 
 
         </div>
        
-        <div class="col-sm-5">
-                <div class = "row">
-                        <div id= "randomNumber" class = "col-sm-7"></div>
-                        <div class = "col-sm-5"><p id="wins">Wins: </p>
-                        <p id="losses">Losses: </p></div>
+        <div class="col-sm-6" style="padding-left: 90px">
+                <div class = "row" style="padding: 20px">
+                        <div id= "randomNumber" class = "col-sm-6"></div>
+                        <div id= "winsandLosses" class = "col-sm-6"><p id="wins" style="color:green">Wins: </p>
+                        <p id="losses" style = color:red>Losses: </p></div>
                  </div>
+                 <div class = "row" style="padding: 20px">
              <img id="rubyCrystal" src="assets/images/rubyCrystal.PNG">
              <img id="azuriteCrystal" src="assets/images/azuriteCrystal.PNG">   
              <img id="emeraldCrystal" src="assets/images/emeraldCrystal.PNG"> 
              <img id="citrineCrystal" src="assets/images/citrineCrystal.PNG"> 
-             
-         <div id = "totalScore">Your total score is: </div>
+                 </div>
+         <div id = "totalScore" class = "col-sm-12">Your total score is: </div>
 
         </div>
 
